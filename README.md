@@ -12,7 +12,7 @@ When `knit` to PDF, this R Markdown file generates Figure 5 (bubble plot for Q24
 ## uniformtest.m
 This Matlab code generates Table 7 in the paper.  The file requires `effproj.m`
 Usage:  X = uniformtest(A,P,m)
-This runs a test for uniformity for the rank data profile P based on the rows of the matrix A (i.e., the row space of A after removing the all-ones space. In this case, m is the number of candidates being ranked. The output is the estimated p-value followed by the computed test statistic. 
+This runs a test for uniformity for the rank data profile P based on the rows of the matrix A (i.e., the row space of A after removing the all-ones space). In this case, m is the number of candidates being ranked. The output is the estimated p-value followed by the computed test statistic. 
 
 For example, to apply the Means Test to the data from Question 24 (which is encoded in the fifth column of the matrix Question24 pasted below), one calls `uniformtest(MatrixMeans,Question24(:,5),4)`  where
 
@@ -71,7 +71,7 @@ Question24 =
      0     0     0     0     0     0     0     0     1     0     1     0     0     0     1     0     1     0     0     0     1     0     1     0
      0     0     0     0     0     0     0     0     0     1     0     1     0     0     0     1     0     1     0     0     0     1     0     1
 
-For the Ordered Pairs test, one uses for A:
+For the Pairs test, one uses for A:
 
 MatrixOrderedPairs =
 
