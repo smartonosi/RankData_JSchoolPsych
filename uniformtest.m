@@ -4,7 +4,7 @@ function X = uniformtest(A,P,m)
 %
 % This runs a test for uniformity for the rank data profile P based on the 
 % rows of the matrix A (i.e., the row space of A after removing the 
-% all-ones space. In this case, m is the number of candidates being 
+% all-ones space). In this case, m is the number of candidates being 
 % ranked. The output is the estimated p-value followed by the computed 
 % test statistic. 
 
