@@ -1,10 +1,10 @@
 # RankData_JSchoolPsych
-Code to generate figures and tables for ``Using Ranked Survey Data in Education Research: Methods and Applications`` by Bargagliotti et al, Journal of School Psychology, 2021
+Code to generate figures and tables for ``Using Ranked Survey Data in Education Research: Methods and Applications`` by Anna E. Bargagliotti (Loyola Marymount University), Susan E. Martonosi (Harvey Mudd College), Michael E. Orrison (Harvey Mudd College), Austin H. Johnson (University of California - Riverside), and Sarah A. Fefer (University of Massachusetts - Amherst), Journal of School Psychology, 2021.
 
-Raw survey data is available by request of the authors only.
+Raw survey data (`SurveyDataComplete.csv`) is available by request of the authors only.
 
 ## RankData_JSchoolPsych.Rmd
-This R Markdown file generates Tables 2-6, Tables 8-12, Figures 1-4, and Figures 7-9 of the paper.  The file requires the survey data and `rankplot_SM.R` to run.  When `knit` to PDF, the document `RankData_JSchoolPsych.pdf` should be reproduced. 
+This R Markdown file generates Tables 2-6, Tables 8-12, Figures 1-4, and Figures 7-9 of the paper.  The file requires `SurveyDataComplete.csv` and `rankplot_SM.R` to run.  When `knit` to PDF, the document `RankData_JSchoolPsych.pdf` should be reproduced. 
 
 ## 20180405_RankedDataBubblePlot_Q24.Rmd
 When `knit` to PDF, this R Markdown file generates Figure 5 (bubble plot for Q24) of the paper.
