@@ -1,5 +1,5 @@
 # RankData_JSchoolPsych
-Code to generate figures and tables for Bargagliotti et al, 2021
+Code to generate figures and tables for ``Using Ranked Survey Data in Education Research: Methods and Applications`` by Bargagliotti et al, Journal of School Psychology, 2021
 
 Raw survey data is available by request of the authors only.
 
