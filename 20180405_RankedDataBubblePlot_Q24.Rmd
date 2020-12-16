@@ -1,0 +1,51 @@
+---
+title: "Bubble_Plot_Q24"
+author: "Nick"
+date: "4/4/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+library(ggplot2)
+library(plotly)
+
+#https://flowingdata.com/2010/11/23/how-to-make-bubble-charts/
+x=c(1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4)
+y=c(1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4)
+#c=c(261,165,147,103,93,72,113,192,275,117,188,247,153,66,114,249,108,129,177,105)
+
+c=c(261,165,147,103 ,72,113,192,275 ,188,247,153,66,249,108,129,177 )
+
+Bubble_plot <- data.frame(x,y,c)
+
+radius <- sqrt( Bubble_plot$c/ pi )
+
+symbols(Bubble_plot$x, Bubble_plot$y, circles = radius, inches = 0.25, fg="white", bg="lightpink1"
+        ,xlab="Ranking", yaxt = 'n', ylab ='')
+
+text(Bubble_plot$x, Bubble_plot$y, Bubble_plot$c, cex = 0.5)
+
+title(main = "Ranked Data Bubble Plot Q24")
+
+par(xpd=TRUE)
+
+legend(-0.2, 4.2, legend=c("Self   "),
+         cex=0.8,bty = "n")
+
+legend(-0.2, 3.2, legend=c("Parent "),
+       cex=0.8,bty = "n")
+
+legend(-0.2, 2.2, legend=c("Friend "),
+       cex=0.8,bty = "n")
+
+legend(-0.2, 1.2, legend=c("Teacher"),
+       cex=0.8,bty = "n")
+
+
+```
+
