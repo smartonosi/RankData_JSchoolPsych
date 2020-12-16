@@ -704,11 +704,11 @@ set.seed(123)
 # to save the results of rankclust, and comment out the call to "load".
 # On subsequent runs, the call to "save" and rankclust" can be commented out and "load" can be uncommented
 # to simply load in the fitted clustering model. This will save compilation time.
-#result24Comp = rankclust(as.matrix(completeQ24[,q24ind]), m=4, maxTry=10, K=c(1:10), Ql=200, run=5) 
+result24Comp = rankclust(as.matrix(completeQ24[,q24ind]), m=4, maxTry=10, K=c(1:10), Ql=200, run=5) 
 # m = ncol, K=nclusters, Ql = Gibbs sampler iterations, run = # independent runs of the algorithm
 
-#save(result24Comp, file="clusterResult24Comp.rda")
-load("clusterResult24Comp.rda")
+save(result24Comp, file="clusterResult24Comp.rda")
+#load("clusterResult24Comp.rda")
 bics24Comp <- c(result24Comp@results[[1]]@bic, result24Comp@results[[2]]@bic, result24Comp@results[[3]]@bic,
                 result24Comp@results[[4]]@bic, result24Comp@results[[5]]@bic, result24Comp@results[[6]]@bic,
                 result24Comp@results[[7]]@bic, result24Comp@results[[8]]@bic, result24Comp@results[[9]]@bic,
